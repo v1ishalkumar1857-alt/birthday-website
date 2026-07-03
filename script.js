@@ -1,8 +1,18 @@
-const gift = document.querySelector(".gift");
-const lid = document.querySelector(".lid");
+const gift = document.getElementById("gift");
 
-gift.addEventListener("click", ()=>{
+const lid = document.querySelector(".gift-lid");
 
-lid.style.transform="rotateZ(-35deg) rotateX(80deg)";
+let opened = false;
 
+gift.addEventListener("click",()=>{
+
+if(opened) return;
+
+opened=true;
+
+lid.style.transform=
+"rotateX(120deg) rotateZ(-18deg) translateY(-25px)";
+
+gift.style.transform=
+"scale(1.05)";
 });
