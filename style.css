@@ -183,14 +183,13 @@ transform:translateY(0);
 
 }
 
-}
-
 .gift:hover{
 
 transform:rotateY(20deg)
 rotateX(10deg);
 
 }
+
 .gift-box{
 
 transition:.5s;
