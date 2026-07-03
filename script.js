@@ -25,6 +25,12 @@ particleCount:250,
 spread:120
 });
 
+  const music = document.getElementById("birthdayMusic");
+
+music.play().catch(() => {
+    console.log("Music playback requires user interaction.");
+});
+  
 light.style.opacity=1;
 
 setTimeout(()=>{
