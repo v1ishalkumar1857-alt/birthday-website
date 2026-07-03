@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Ritu ❤️</title>
+
+    <meta name="theme-color" content="#ff4f8b">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div id="background">
+        <div id="stars"></div>
+        <div id="moon"></div>
+        <canvas id="fireworksCanvas"></canvas>
+    </div>
+
+    <!-- Floating Hearts -->
+    <div id="heartsContainer"></div>
+
+    <!-- Intro -->
+    <section id="introSection" class="screen active">
+
+        <div class="introContent">
+
+            <h2 id="introText"></h2>
+
+            <p class="tapHint">
+                A little surprise is waiting...
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Gift -->
+    <section id="giftSection" class="screen">
+
+        <h1 class="mainTitle">
+
+            Happy Birthday
+
+        </h1>
+
+        <h2 class="nameTitle">
+
+            Ritu Bhardwaj ❤️
+
+        </h2>
+
+        <p class="instruction">
+
+            Tap the gift to begin
+
+        </p>
+
+        <div id="gift">
+
+            <div class="gift-lid">
+
+                <div class="bow bow-left"></div>
+
+                <div class="bow bow-right"></div>
+
+                <div class="ribbon ribbon-vertical"></div>
+
+            </div>
+
+            <div class="gift-box">
+
+                <div class="ribbon ribbon-horizontal"></div>
+
+                <div class="ribbon ribbon-vertical"></div>
+
+            </div>
+
+            <div id="magicGlow"></div>
+
+        </div>
+
+    </section>
+
+    <!-- Cake -->
+    <section id="cakeSection" class="screen">
+
+        <h2 class="sectionTitle">
+
+            Make A Wish ✨
+
+        </h2>
+
+        <div id="cake">
+
+            <div class="cake-top"></div>
+
+            <div class="cake-middle"></div>
+
+            <div class="cake-bottom"></div>
+
+            <div class="candle">
+
+                <div class="flame"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallerySection" class="screen">
+
+        <h2 class="sectionTitle">
+
+            Beautiful Memories ❤️
+
+        </h2>
+
+        <div class="gallery">
+
+            <img src="assets/photo1.jpg" alt="Memory 1">
+
+            <img src="assets/photo2.jpg" alt="Memory 2">
+
+            <img src="assets/photo3.png" alt="Memory 3">
+
+            <img src="assets/photo4.jpg" alt="Memory 4">
+
+            <img src="assets/photo5.jpg" alt="Memory 5">
+
+        </div>
+
+    </section>
+
+    <!-- Letter -->
+    <section id="letterSection" class="screen">
+
+        <div class="letterCard">
+
+            <h2>Dear Ritu ❤️</h2>
+
+            <p id="letterText"></p>
+
+        </div>
+
+    </section>
+
+    <!-- Final -->
+    <section id="finalSection" class="screen">
+
+        <div class="finalContent">
+
+            <h1>
+
+                Happy Birthday ❤️
+
+            </h1>
+
+            <h2>
+
+                Ritu Bhardwaj
+
+            </h2>
+
+            <p>
+
+                May your smile always shine brighter than the stars.
+
+            </p>
+
+            <div class="signature">
+
+                Made with ❤️ by Vishal
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+
+        <source src="assets/music.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
