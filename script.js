@@ -1,50 +1,62 @@
 const gift = document.getElementById("gift");
 const lid = document.querySelector(".gift-lid");
 
-let opened = false;
+const light = document.getElementById("magicLight");
 
-gift.addEventListener("click", () => {
+const cake = document.getElementById("cake");
 
-    if (opened) return;
+const message = document.getElementById("message");
 
-    opened = true;
+let opened=false;
 
-    // Open lid
-    lid.style.transform =
-        "rotateX(120deg) rotateZ(-18deg) translateY(-25px)";
+gift.addEventListener("click",()=>{
 
-    gift.style.transform = "scale(1.05)";
+if(opened) return;
 
-    // Confetti burst
-    confetti({
-        particleCount: 250,
-        spread: 120,
-        origin: {
-            y: 0.6
-        }
-    });
+opened=true;
 
-    // Fire several bursts
-    setTimeout(() => {
+lid.style.transform=
+"rotateX(120deg) rotateZ(-18deg) translateY(-25px)";
 
-        confetti({
-            particleCount: 150,
-            angle: 60,
-            spread: 70,
-            origin: {
-                x: 0
-            }
-        });
+gift.style.transform="scale(1.05)";
 
-        confetti({
-            particleCount: 150,
-            angle: 120,
-            spread: 70,
-            origin: {
-                x: 1
-            }
-        });
+confetti({
+particleCount:250,
+spread:120
+});
 
-    }, 500);
+light.style.opacity=1;
+
+setTimeout(()=>{
+
+light.style.transition="1s";
+
+light.style.opacity=0;
+
+cake.classList.remove("hidden");
+
+typeMessage("🎉 Happy Birthday! Wishing you endless happiness! ❤️");
+
+},1200);
 
 });
+
+function typeMessage(text){
+
+let i=0;
+
+const timer=setInterval(()=>{
+
+message.innerHTML+=text.charAt(i);
+
+i++;
+
+if(i>=text.length){
+
+clearInterval(timer);
+
+}
+
+},70);
+
+}
